@@ -1,19 +1,23 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
+import { MdDone } from "react-icons/md"; 
+import { MdDeleteForever } from "react-icons/md";
 import './Task.css'
-import { LuClipboardEdit } from "react-icons/lu";
-const Task = ({task,onComplete}) => {
+
+const Task = ({task,onComplete,onDelete}) => {
   return (
     <div className='task-list'>
       <div className='task'>
-        <p className='task-text'>{task.Name}</p>
+        <p className={task.isCompleted?"textcompleted":"task-text"} >{task.Name}</p>
         <div className='options'>
-          <button className='edit-button'><LuClipboardEdit size={20}/></button>
           <button className='complete-button' onClick={()=>
             onComplete(task.id)
-          }>Complete</button>
-          <button className='delete-button'>Delete</button>
+          }>Complete <MdDone size={20}/></button>
+          <button className='delete-button'onClick={()=>
+            onDelete(task.id)
+          } >Delete<MdDeleteForever size={20}/></button>
         </div>
       </div>
     </div>

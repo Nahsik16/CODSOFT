@@ -1,12 +1,13 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import './Home.css'
-import Tasks from '../Tasks/Tasks.jsx'
-
 import PropTypes from 'prop-types';
 import Task from '../Task/Task.jsx';
+import { GrAddCircle } from "react-icons/gr";
 
-const Home = ({onAdd, tasks,onComplete}) => {
+const Home = ({onAdd, tasks,onComplete,onDelete}) => {
+  
   const [Name,setName] =useState('');
   function handleSubmit(e){
     e.preventDefault();
@@ -27,15 +28,15 @@ Home.propTypes = {
   return (
     <div className='home'>
       <form onSubmit={handleSubmit} className='form' >
-        <input type='text' className='input-field' placeholder='Add a task' value={Name} onChange={onChangeName}/>
-        <button type='submit' className='add-button'>Add</button>
+        <input type='text' className='input-field' placeholder='Add a task' required value={Name} onChange={onChangeName}/>
+        <button type='submit' className='add-button'>Add <GrAddCircle size={20}/></button>
       </form>
       <div className='tasks-section'>
       <div className="your-task">
-        <p>Your Tasks</p>
-        <div className="br"></div>
+        <div  className='p'>Your Tasks</div> 
       </div>
-      {tasks.map(task => <Task key={task.id} task={task} onComplete={onComplete}/>)}
+      <div className="br"></div>
+      {tasks.map(task => <Task key={task.id} task={task} onComplete={onComplete} onDelete={onDelete}/>)}
     </div>
     </div>
   )
