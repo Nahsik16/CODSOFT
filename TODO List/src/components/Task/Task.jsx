@@ -6,6 +6,7 @@ import { MdDone } from "react-icons/md";
 import { MdDeleteForever } from "react-icons/md";
 import './Task.css'
 
+
 const Task = ({task,onComplete,onDelete}) => {
   return (
     <div className='task-list'>
@@ -14,10 +15,10 @@ const Task = ({task,onComplete,onDelete}) => {
         <div className='options'>
           <button className='complete-button' onClick={()=>
             onComplete(task.id)
-          }>Complete <MdDone size={20}/></button>
+          }><p>Complete</p> <MdDone size={20}/></button>
           <button className='delete-button'onClick={()=>
             onDelete(task.id)
-          } >Delete<MdDeleteForever size={20}/></button>
+          } ><p>Delete</p><MdDeleteForever size={20}/></button>
         </div>
       </div>
     </div>

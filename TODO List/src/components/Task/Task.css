@@ -7,6 +7,7 @@
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2.5s ease;
 }
 
 .task {
@@ -24,12 +25,14 @@
   font-size: 22px;
   font-weight: 500;
   color: #555;
+  text-transform: capitalize;
 }
 .textcompleted {
   font-size: 20px;
   color: #555;
   font-weight: 500;
   text-decoration: line-through;
+  text-transform: capitalize;
 }
 .options {
   display: flex;
@@ -71,4 +74,28 @@
 
 .delete-button:hover {
   background-color: #ff1a1a;
+}
+@media screen and (max-width:720px) {
+  .task-list {
+    width: 100%;
+  }
+  .task {
+    flex-direction: row;
+  }
+  .options {
+    justify-content: center;
+  }
+  .complete-button {
+    padding: 5px 10px;
+  }
+  .complete-button p {
+    display: none;
+  }
+  .delete-button {
+    padding: 5px 10px;
+  }
+  .delete-button p {
+    display: none;
+  }
+  
 }
