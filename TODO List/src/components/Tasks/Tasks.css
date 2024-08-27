@@ -1,0 +1,28 @@
+
+
+.tasks-section {
+  padding:  20px 0px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 85%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.your-task {
+  margin-top: 3px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.br{
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 90%;
+  height: 1px;
+  background-color: #fff;
+  border: 1px solid #805AD5;
+}
+.your-task p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
