@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div
       id="Footer"
-      className="flex justify-around bg-[#465697] text-white p-10 md:p-12 items-center"
+      className="flex justify-around mt-7 bg-[#070910] text-white p-10 md:p-12 items-center"
     >
       <div>
         <h1 className="text-2xl md:text-6xl font-bold">Contact</h1>
@@ -18,15 +18,15 @@ const Footer = () => {
       <ul className="text-sm md:text-xl">
         <li className="flex gap-1 items-center">
           <MdOutlineEmail size={20} />
-          myemail@gmail.com
+          kishan@gmail.com
         </li>
         <li className="flex gap-1 items-center">
           <CiLinkedin />
-          linkdlin.com/username
+          linkdlin.com/kishan
         </li>
         <li className="flex gap-1 items-center">
           <FaGithub />
-          github.com/username
+          github.com/Nahsik16
         </li>
       </ul>
     </div>

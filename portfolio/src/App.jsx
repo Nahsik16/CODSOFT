@@ -3,20 +3,19 @@ import Experience from "./components/Experience/Experience"
 import Footer from "./components/Footer/Footer"
 import Home from "./components/Home/Home"
 import Navbar from "./components/Navbar/Navbar"
+import Project from "./components/Project/Project"
 
 
 const App = () => {
   return (
-    <div className="bg-[#171d32] h-auto w-full overflow-hidden">
+    <div className="bg-[#080d1f] h-auto w-full overflow-hidden">
     <Navbar/>
     <Home/>
-    <Experience/>
     <About/>
-  
+    <Experience/>
+    <Project/>
     <Footer/>
     </div>
-
-  
   )
 }
 
