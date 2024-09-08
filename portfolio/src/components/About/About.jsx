@@ -1,16 +1,20 @@
 
-import AboutImg from "../../assets/hero_image.png";
+
+import AboutImg from "../../assets/img1.png";
 import { IoArrowForward } from "react-icons/io5";
 const About = () => {
   return (
     <div
       id="About"
-      className="text-white md:flex overflow-hidden items-center md:flex-wrap md:justify-center bg-black shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-12"
-    >
+      className="text-white md:flex overflow-hidden items-center md:flex-wrap md:justify-center bg-black shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-12">
       <div>
         <h2 className="text-2xl md:text-4xl font-bold">About</h2>
-        <div className="md:flex flex-wrap flex-col md:flex-row items-center">
-          <img className="md:h-80" src={AboutImg} alt="About img" />
+        <div className="md:flex flex-wrap flex-col md:flex-row items-center gap-20">
+        <img
+           className="mt-7 ml-8 w-40 h-40 md:w-1/4 md:h-auto object-cover filter"
+            src={AboutImg} alt="About img"
+            style={{ filter: "drop-shadow(0 10px 15px rgba(0, 123, 255, 0.5))" }}
+          />
 
           <ul>
             <div className="flex gap-3 py-4">
@@ -21,11 +25,7 @@ const About = () => {
                   Frontend developer
                 </h1>
                 <p className="text-sm md:text-md leading-tight">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maiores explicabo deserunt asperiores quasi, vitae blanditiis
-                  perferendis quos consectetur ea harum! Libero aut qui
-                  similique recusandae provident consectetur sed itaque alias
-                  sint ipsa?
+                Experienced in building responsive and dynamic UIs with React.js, HTML, CSS, and JavaScript. Leveraging tools like Framer Motion and GSAP to create engaging and visually appealing user interfaces.
                 </p>
               </span>
             </div>
@@ -34,11 +34,10 @@ const About = () => {
 
               <span className="w-96">
                 <h1 className="text-xl md:text-2xl font-semibold leading-normal">
-                  Database developer
+                Backend developer
                 </h1>
                 <p className="text-sm md:text-md leading-tight">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maiores
+                Proficient in developing secure and scalable back-end systems using Express.js, Node.js, and MongoDB. Skilled in API creation and ensuring seamless integration between the front and back ends.
                 </p>
               </span>
             </div>
@@ -47,12 +46,10 @@ const About = () => {
 
               <span className="w-96">
                 <h1 className="text-xl md:text-2xl font-semibold leading-normal">
-                  Backend developer
+                AI&ML Integration
                 </h1>
                 <p className="text-sm md:text-md leading-tight">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maiores explicabo deserunt asperiores quasi, vitae blanditiis
-                  perferendis
+                Focused on integrating AI/ML technologies through various hackathon projects to enhance user interactions. Continuously learning and applying AI to real-world applications.
                 </p>
               </span>
             </div>
