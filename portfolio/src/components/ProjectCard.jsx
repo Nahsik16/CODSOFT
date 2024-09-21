@@ -17,7 +17,7 @@ const ProjectCard = ({title,main,image,link,source}) => {
         </a>
         <a href={source} target="_blank" rel="noopener noreferrer">
           <button className="md:mt-10 text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
-            Source Code
+            Code
           </button>
         </a>
       </div>

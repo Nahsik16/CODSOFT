@@ -2,7 +2,7 @@ import ProjectCard from "../ProjectCard"
 import project1 from "../../assets/Project1.png"
 import project2 from "../../assets/Project2.png"
 import project3 from "../../assets/Project3.png"
-
+import project4 from "../../assets/Project4.png"
 
 const Project = () => {
   return (
@@ -10,11 +10,11 @@ const Project = () => {
       <h1 className="text-2xl md:text-4xl text-white font-bold">Projects</h1>
       <div className="py-12 px-8 flex flex-wrap gap-5">
         <ProjectCard
-          title="Photoly"
-          main="A website where users can upload, design and edit pictures with AI-powered features. It provides a seamless experience for enhancing and customizing photos."
-          image={project1}
-          link="https://tera-byte-ace.vercel.app/"
-          source='https://github.com/Nahsik16/TeraByte'
+          title="Stichify"
+          main="A 3D clothing customization website that allows users to interact with a 3D cloth model, change its color, and add logos or textures in real-time."
+          image={project4}
+          link="https://stitchify.onrender.com/"
+          source='https://github.com/Nahsik16/Stichify'
         />
         <ProjectCard
           title="Tandoori Bites"
@@ -23,6 +23,14 @@ const Project = () => {
           link="https://tandoori-bites-frontend.onrender.com/"
           source='https://github.com/Nahsik16/Tandoori-Bites'
         />
+        <ProjectCard
+          title="Photoly"
+          main="A website where users can upload, design and edit pictures with AI-powered features. It provides a seamless experience for enhancing and customizing photos."
+          image={project1}
+          link="https://tera-byte-ace.vercel.app/"
+          source='https://github.com/Nahsik16/TeraByte'
+        />
+        
         <ProjectCard
           title="ToDO"
           main="A simple and user-friendly Todo List web application built with React. The app allows users to add, update, delete, and manage tasks, helping them stay organized and productive."
