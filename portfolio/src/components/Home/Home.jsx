@@ -16,7 +16,7 @@ const Home = () => {
   A student at Thadomal Shahani College diving deep into the world of AI and Data Science. 🧠<br />
   Passionate about leveraging tech.
 </p>
-<a href="https://drive.google.com/file/d/1KyqHub_tnml2nvizSc8bQey5XjktvPwd/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+<a href="https://drive.google.com/file/d/12KSBaB64QlN1W8NjGUOiqEd_3CA4oYMT/view?usp=sharing" target="_blank" rel="noopener noreferrer">
   <button className="mt-4 md:mt-8 text-white py-2 px-4 text-sm md:text-lg md:py-2 md:px-6 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
     Resume
   </button>
